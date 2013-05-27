@@ -13,7 +13,7 @@ alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias git=hub
 alias batt=acpi
-alias cleanpreviews="sudo rm -R ~/.cache/thumbnails/fail"
+alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
