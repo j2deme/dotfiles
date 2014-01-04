@@ -9,11 +9,12 @@ ZSH_THEME="smt"
 #ZSH_THEME="sorin"
 
 # Example aliases
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="nano ~/dotfiles/zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias git=hub
 alias batt=acpi
 alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
+alias diff="colordiff -rwb"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
