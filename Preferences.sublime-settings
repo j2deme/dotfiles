@@ -1,26 +1,5 @@
 {
   "always_show_minimap_viewport": true,
-  "draw_minimap_border": true,
-  "bold_folder_labels": true,
-  "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-  "dictionary": "Packages/Language - Spanish/Spanish.dic",
-  "spell_check": false,
-  "font_size": 14,
-  "line_numbers": true,
-  "highlight_line": true,
-  "save_on_focus_lost": true,
-  "ensure_newline_at_eof_on_save": true,
-  "trim_trailing_white_space_on_save": true,
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "word_wrap": true,
-  "match_brackets_angle": true,
-  "match_selection": true,
-  "match_tags": true,
-  "folder_exclude_patterns": [".svn",".git",".hg","CVS"],
-  "ignored_packages": ["Vintage"],
-  "indent_guide_options":["draw_active"],
-  "rulers":[80,100],
   "binary_file_patterns":
   [
     "*.jpg",
@@ -43,6 +22,19 @@
     "*.ppt",
     "*.pptx"
   ],
+  "bold_folder_labels": true,
+  //"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+  "theme": "Flatland Dark.sublime-theme",
+  "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+  "flatland_square_tabs": true,
+  "font_face": "Ubuntu Mono",
+  "font_options": "subpixel_antialias",
+  "font_size": 16,
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "dictionary": "Packages/Language - Spanish/Spanish.dic",
+  "draw_minimap_border": true,
+  "ensure_newline_at_eof_on_save": true,
   "file_exclude_patterns":
   [
     "*.pyc",
@@ -66,6 +58,39 @@
     "*.db",
     "*.sublime-workspace",
     "*.ogv",
-    "*.~*"
-  ]
+    "*.~*",
+    "*.*~",
+    "*.zip"
+  ],
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS"
+  ],
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "indent_guide_options":
+  [
+    "draw_active"
+  ],
+  "line_numbers": true,
+  "match_brackets_angle": true,
+  "match_selection": true,
+  "match_tags": true,
+  "rulers":
+  [
+    80,
+    100
+  ],
+  "save_on_focus_lost": true,
+  "spell_check": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": true,
 }
