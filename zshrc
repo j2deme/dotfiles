@@ -11,10 +11,13 @@ ZSH_THEME="smt"
 # Example aliases
 alias zshconfig="nano ~/dotfiles/zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
+alias sii="cd ~/Webdev/SII/"
+alias web="cd ~/Webdev/"
 alias git=hub
 alias batt=acpi
 alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
 alias diff="colordiff -rwb"
+alias gti=git
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -50,4 +53,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/home/j2deme/.rvm/gems/ruby-1.9.3-p429/bin:/home/j2deme/.rvm/gems/ruby-1.9.3-p429@global/bin:/home/j2deme/.rvm/rubies/ruby-1.9.3-p429/bin:/home/j2deme/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.3-p429/bin:$HOME/.rvm/gems/ruby-1.9.3-p429@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p429/bin:$HOME/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.local/bin
