@@ -18,7 +18,19 @@ alias batt=acpi
 alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
 alias diff="colordiff -rwb"
 alias gti=git
+alias lsd='ls -l | grep "^d"'
+alias ccat='pygmentize -O style=monokai -f console256 -g'
 
+# npm
+alias npmp="sudo npm publish"
+alias npma="sudo npm adduser"
+alias npmi="sudo npm install"
+alias npmg="sudo npm install -g"
+alias npmu="sudo npm update"
+alias npmr="sudo npm uninstall"
+alias npmrg="sudo npm uninstall -g"
+
+alias please=sudo
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
