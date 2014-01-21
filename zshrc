@@ -20,6 +20,7 @@ alias diff="colordiff -rwb"
 alias gti=git
 alias lsd='ls -l | grep "^d"'
 alias ccat='pygmentize -O style=monokai -f console256 -g'
+alias bower='noglob bower'
 
 # npm
 alias npmp="sudo npm publish"
