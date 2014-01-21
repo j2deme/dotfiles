@@ -1,6 +1,7 @@
 #!/bin/bash
 function opensyb {
   #&> /dev/null
+  source /opt/sybase/SYBASE.sh
   /opt/sybase/shared/sybcentral600/scjview.sh
 }
 
