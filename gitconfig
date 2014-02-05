@@ -19,8 +19,6 @@
   changed = yellow
   untracked = cyan
   deleted = red
-[push]
-	default = simple
 [merge]
 	conflictstyle = diff3
 [alias]
