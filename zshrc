@@ -5,18 +5,18 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="smt"
+ZSH_THEME="kphoen"
 #ZSH_THEME="sorin"
 
 # Example aliases
 alias zshconfig="nano ~/dotfiles/zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
+alias ohmyzsh="cd ~/.oh-my-zsh"
 alias sii="cd ~/Webdev/SII/"
 alias web="cd ~/Webdev/"
-alias git=hub
 alias batt=acpi
 alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
 alias diff="colordiff -rwb"
+alias git=hub
 alias gti=git
 alias lsd='ls -l | grep "^d"'
 alias ccat='pygmentize -O style=monokai -f console256 -g'
@@ -61,9 +61,21 @@ alias please=sudo
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git extract python pip)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.3-p429/bin:$HOME/.rvm/gems/ruby-1.9.3-p429@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p429/bin:$HOME/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.local/bin
+export PATH=$PATH:$HOME/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.local/bin
+export PATH=$HOME/local/bin:$PATH
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+
+BASE16_SCHEME="bright"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+
+newprj() {
+    local TARGET="$HOME/Projects/${*}"
+    mkdir -p "$TARGET"
+    cd "$TARGET"
+}
