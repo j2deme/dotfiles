@@ -79,3 +79,7 @@ newprj() {
     mkdir -p "$TARGET"
     cd "$TARGET"
 }
+
+calc() {
+    bc -l <<< "$@"
+}
