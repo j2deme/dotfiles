@@ -9,7 +9,8 @@ ZSH_THEME="kphoen"
 #ZSH_THEME="norm"
 
 # Example aliases
-alias zshconfig="nano ~/dotfiles/zshrc"
+alias zshconfig="subl ~/dotfiles/zshrc && source ~/dotfiles/zshrc"
+alias resource="source ~/dotfiles/zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias sii="cd ~/Webdev/SII/"
 alias web="cd ~/Webdev/"
@@ -19,8 +20,12 @@ alias diff="colordiff -rwb"
 alias git=hub
 alias gti=git
 alias lsd='ls -l | grep "^d"'
-alias ccat='pygmentize -O style=monokai -f console256 -g'
-alias bower='noglob bower'
+alias ccat="pygmentize -O style=monokai -f console256 -g"
+alias bower="noglob bower"
+alias open="xdg-open"
+alias lns="ln -s"
+alias nano="nano -DHOSWkimAE -r 100"
+alias poogle='ping google.com'
 
 # npm
 alias npmp="sudo npm publish"
@@ -75,11 +80,45 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 newprj() {
-    local TARGET="$HOME/Projects/${*}"
-    mkdir -p "$TARGET"
-    cd "$TARGET"
+  local TARGET="$HOME/Projects/${*}"
+  mkdir -p "$TARGET"
+  cd "$TARGET"
 }
 
 calc() {
-    bc -l <<< "$@"
+  bc -l <<< "$@"
+}
+# calc(){ awk "BEGIN{ printf(\"%.7g\n\",$*) }" ;}
+
+extract () {
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1     ;;
+      *.tar.gz)    tar xzf $1     ;;
+      *.bz2)       bunzip2 $1     ;;
+      *.rar)       unrar e $1     ;;
+      *.gz)        gunzip $1      ;;
+      *.tar)       tar xf $1      ;;
+      *.tbz2)      tar xjf $1     ;;
+      *.tgz)       tar xzf $1     ;;
+      *.zip)       unzip $1       ;;
+      *.Z)         uncompress $1  ;;
+      *.7z)        7z x $1        ;;
+      *)     echo "'$1' cannot be extracted via extract()" ;;
+       esac
+   else
+      echo "'$1' is not a valid file"
+   fi
+}
+
+ft() {
+  find . -name "$2" -exec grep -il "$1" {} \;
+}
+
+ltree(){
+  tree -C $* | less -R
+}
+
+notify (){
+  ($* ; notify-send "Command over" "$*")
 }
