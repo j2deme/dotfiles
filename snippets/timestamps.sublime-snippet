@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+created_at timestamp not null default now(),
+updated_at timestamp not null default now()
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>timestamps</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sql</scope>
+</snippet>

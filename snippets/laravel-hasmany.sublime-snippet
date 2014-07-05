@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+public function ${1:model}(){
+  return \$this->hasMany('${1/(.*)/\u\1\E/i}');
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>hm</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+  <description>1 to N</description>
+</snippet>
