@@ -108,3 +108,12 @@
   empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
 [push]
 	default = simple
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	main-window-view = HistoryView
+	file-view-vpane-position = 463
+	history-view-vpane-position = 338
+	file-view-hpane-position = 257
+[diff]
+	tool = meld
