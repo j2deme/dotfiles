@@ -23,18 +23,16 @@
     "*.pptx"
   ],
   "bold_folder_labels": true,
+  "caret_extra_width": 1,
+  "caret_style": "phase",
+  "copy_with_empty_selection": false,
+  "drag_text": false,
   //"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-  "theme": "Flatland Dark.sublime-theme",
-  "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
-  "flatland_square_tabs": true,
-  "font_face": "Ubuntu Mono",
-  "font_options": "subpixel_antialias",
-  "font_size": 16,
-  "line_padding_bottom": 1,
-  "line_padding_top": 1,
+  "color_scheme": "Packages/Base16/base16-railscasts.dark.tmTheme",
   "dictionary": "Packages/Language - Spanish/Spanish.dic",
   "draw_minimap_border": true,
   "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
   "file_exclude_patterns":
   [
     "*.pyc",
@@ -60,8 +58,11 @@
     "*.ogv",
     "*.~*",
     "*.*~",
-    "*.zip"
+    "*.zip",
+    "*.rar",
+    "*.tar"
   ],
+  "flatland_square_tabs": true,
   "folder_exclude_patterns":
   [
     ".svn",
@@ -69,6 +70,9 @@
     ".hg",
     "CVS"
   ],
+  "font_face": "Ubuntu Mono",
+  "font_options": "subpixel_antialias",
+  "font_size": 17,
   "highlight_line": true,
   "ignored_packages":
   [
@@ -79,9 +83,13 @@
     "draw_active"
   ],
   "line_numbers": true,
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "match_brackets_content": false,
   "match_brackets_angle": true,
   "match_selection": true,
   "match_tags": true,
+  "overlay_scroll_bars": "enabled",
   "rulers":
   [
     80,
@@ -89,8 +97,14 @@
   ],
   "save_on_focus_lost": true,
   "spell_check": false,
+  "scroll_past_end": true,
+  "scroll_speed": 5.0,
   "tab_size": 2,
+  "theme": "Flatland Dark.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
+  "update_check": false,
+  "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
   "word_wrap": true,
+  "wrap_width": 100
 }
