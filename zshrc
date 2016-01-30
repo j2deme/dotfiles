@@ -59,27 +59,26 @@ alias sii="cd ~/Webdev/SII/"
 alias web="cd ~/Webdev/"
 alias batt=acpi
 alias cleant="sudo rm -R ~/.cache/thumbnails/fail"
-alias diff="colordiff -rwb"
-alias git=hub
+alias diff="diff -rwb"
+#alias git=hub
 alias gti=git
 alias lsd='ls -l | grep "^d"'
 alias ccat="pygmentize -O style=monokai -f console256 -g"
 alias bower="noglob bower"
+alias ggg='noglob gg'
 alias open="xdg-open"
-alias lns="ln -s"
 alias nano="nano -DHOSWkimAE -r 100"
 alias poogle='ping google.com'
 
 # npm
-alias npmp="sudo npm publish"
-alias npma="sudo npm adduser"
-alias npmi="sudo npm install"
-alias npmg="sudo npm install -g"
-alias npmu="sudo npm update"
-alias npmr="sudo npm uninstall"
-alias npmrg="sudo npm uninstall -g"
+#alias npmp="sudo npm publish"
+#alias npma="sudo npm adduser"
+#alias npmi="sudo npm install"
+#alias npmg="sudo npm install -g"
+#alias npmu="sudo npm update"
+#alias npmr="sudo npm uninstall"
+#alias npmrg="sudo npm uninstall -g"
 
-alias please=sudo
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
