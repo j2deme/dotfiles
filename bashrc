@@ -85,9 +85,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alFH'
+alias la='ls -AH'
+alias l='ls -CFH'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -116,3 +116,9 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$HOME/local/bin:$PATH
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+source ~/.rvm/scripts/rvm
+
+# Instalación de Android Studio con UDTC
+PATH=/home/j2deme/tools/android/android-studio/sdk/platform-tools:/home/j2deme/tools/android/android-studio/sdk/tools:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
