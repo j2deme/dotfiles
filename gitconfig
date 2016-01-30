@@ -1,5 +1,5 @@
 [user]
-	name = Jaime Delgado Meraz
+	name = j2deme
 	email = j2deme@gmail.com
 [color]
   branch = auto
@@ -23,6 +23,7 @@
 	conflictstyle = diff3
 [alias]
   st = status -s
+  #sync = pull --rebase upstream master
   cl = clone
   ci = commit
   cm = commit -m
