@@ -1,11 +1,54 @@
+export TERM="xterm-256color"
+source ~j2deme/Repos/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle autojump
+antigen bundle common-aliases
+antigen bundle compleat
+antigen bundle git-extras
+antigen bundle git-flow
+antigen bundle npm
+antigen bundle web-search
+antigen bundle z
+antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme kphoen
+#antigen theme bhilburn/powerlevel9k powerlevel9k
+#antigen apply
+
+# Tell antigen that you're done.
+antigen apply
+
+#source /home/j2deme/.zsh-autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+zle-line-init() {
+    #zle autosuggest-start
+}
+
+zle -N zle-line-init
+
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kphoen"
+#ZSH_THEME="kphoen"
 #ZSH_THEME="norm"
 
 # Example aliases
@@ -66,18 +109,15 @@ alias please=sudo
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git extract python pip)
+#plugins=(git github sublime extract python pip npm)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
+source /home/j2deme/Apps/resty
 
 # Customize to your needs...
 export PATH=$PATH:$HOME/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.local/bin
 export PATH=$HOME/local/bin:$PATH
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
-
-BASE16_SCHEME="bright"
-BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 newprj() {
   local TARGET="$HOME/Projects/${*}"
