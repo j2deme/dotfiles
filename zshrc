@@ -161,3 +161,57 @@ ltree(){
 notify (){
   ($* ; notify-send "Command over" "$*")
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin":$PATH
+# SYBASE
+export SYBASE_JRE7="/usr/lib/jvm/java-8-oracle/jre"
+export SYBASE="/opt/sybase"
+export SYBROOT=$SYBASE
+
+#
+# Sybase Product Environment variables
+#
+SCC_HOME=${SYBROOT}/SCC-3_2
+SYBASE_JRE6_32="${SYBROOT}/shared/JRE-6_0_24_32BIT"
+export SYBASE_JRE6_32
+SYBASE_JRE6="${SYBROOT}/shared/JRE-6_0_24_64BIT"
+export SYBASE_JRE6
+SYBASE_JRE7_32="${SYBROOT}/shared/JRE-7_0_7_32BIT"
+export SYBASE_JRE7_32
+SYBASE_JRE7="${SYBROOT}/shared/JRE-7_0_7_64BIT"
+export SYBASE_JRE7
+SYBASE_JRE7_64="${SYBROOT}/shared/JRE-7_0_7_64BIT"
+export SYBASE_JRE7_64
+SYBASE_OCS="OCS-15_0"
+export SYBASE_OCS
+INCLUDE="${SYBROOT}/OCS-15_0/include":$INCLUDE
+export INCLUDE
+LIB="${SYBROOT}/OCS-15_0/lib":$LIB
+export LIB
+PATH="${SYBROOT}/OCS-15_0/bin":$PATH
+export PATH
+LD_LIBRARY_PATH="${SYBROOT}/OCS-15_0/lib:${SYBROOT}/OCS-15_0/lib3p64:${SYBROOT}/OCS-15_0/lib3p":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+LD_LIBRARY_PATH="${SYBROOT}/DataAccess/ODBC/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+LD_LIBRARY_PATH="${SYBROOT}/DataAccess64/ODBC/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+PATH="${SYBROOT}/DBISQL/bin":$PATH
+export PATH
+PATH="${SYBROOT}/SCC-3_2/bin":$PATH
+export PATH
+SCC_JAVA_HOME="${SYBROOT}/shared/JRE-7_0_7_64BIT"
+export SCC_JAVA_HOME
+SYBASE_ASE="ASE-15_0"
+export SYBASE_ASE
+PATH="${SYBROOT}/ASE-15_0/bin:${SYBROOT}/ASE-15_0/install":$PATH
+export PATH
+SYBASE_JRE_RTDS="${SYBROOT}/shared/JRE-7_0_7_64BIT"
+export SYBASE_JRE_RTDS
+LD_LIBRARY_PATH="${SYBROOT}/ASE-15_0/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+SYBASE_WS="WS-15_0"
+export SYBASE_WS
+PATH="${SYBROOT}/ASE-15_0/jobscheduler/bin":$PATH
+export PATH
